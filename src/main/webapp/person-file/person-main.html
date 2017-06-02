@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js" ></script>
+		<!-- 包括所有已编译的插件 -->
+		<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+		<style>
+			th,tbody {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-10 column">
+					<button id="modal-988132" href="#modal-container-988132" data-toggle="modal" role="button" type="button" class="btn btn-primary">
+						增加
+					</button>
+					
+					<!--
+                    	作者：offline
+                    	时间：2017-05-31
+                    	描述：隐藏增加的界面
+                    -->
+					<div class="modal fade" id="modal-container-988132" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<form class="form-horizontal" role="form" action="${pageContext.request.contextPath}/user?type=add" method="post">
+									<div class="form-group">
+										<label for="inputEmail3" class="col-sm-2 control-label">姓名</label>
+										<div class="col-sm-7">
+											<input type="text" id="userPhone" name="userPhone" class="form-control" id="inputEmail3" placeholder="手机" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword3" class="col-sm-2 control-label">性别</label>
+										<div class="col-sm-7">
+			                                <select id="usertype" name="usertype" class="selectpicker show-tick form-control" multiple-data-live-search="true">
+		                                        <option value="" selected="selected">男</option>
+		                                        <option value="">女</option>
+			                                </select>
+			                            </div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword3" class="col-sm-2 control-label">学历</label>
+										<div class="col-sm-7">
+											<input type="password" id="userPassword" name="userPassword" class="form-control" id="inputPassword3" placeholder="密码" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword3" class="col-sm-2 control-label">学位</label>
+										<div class="col-sm-7">
+											<input type="password" id="userPassword" name="userPassword" class="form-control" id="inputPassword3" placeholder="密码" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword3" class="col-sm-2 control-label">部门</label>
+										<div class="col-sm-7">
+											<input type="password" id="userPassword" name="userPassword" class="form-control" id="inputPassword3" placeholder="密码" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword3" class="col-sm-2 control-label">人员状态</label>
+										<div class="col-sm-7">
+			                                <select id="usertype" name="usertype" class="selectpicker show-tick form-control" multiple-data-live-search="true">
+		                                        <option value="">在职</option>
+		                                        <option value="">离职</option>
+		                                        <option value="">兼职</option>
+			                                </select>
+			                            </div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+										<button type="submit" class="btn btn-primary" id="query_add" data-dismiss="modal">保存</button>
+									</div>
+								</form>
+							</div>
+
+						</div>
+					</div>
+					
+					
+					<!--
+                    	作者：offline
+                    	时间：2017-05-31
+                    	描述：表格
+                    -->
+					<table class="table table-hover table-bordered">
+						<thead>
+							<tr>
+								<th>
+									<input type="checkbox" />
+								</th>
+								<th>
+									编号
+								</th>
+								<th>
+									姓名
+								</th>
+								<th>
+									学历
+								</th>
+								<th>
+									部门
+								</th>
+								<th>
+									职务
+								</th>
+								<th>
+									人员状态
+								</th>
+								<th>
+									操作
+								</th>
+							</tr>
+						</thead>
+						<tbody id="tbody">
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>
+									<button type="submit" class="btn btn-primary">修改</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>
+									<button type="submit" class="btn btn-primary">修改</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<ul class="pagination" style="position: absolute;top: 500px;left: 300px;">
+					    <li><a href="#">&laquo;</a></li>
+					    <li class="active"><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li><a href="#">&raquo;</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
